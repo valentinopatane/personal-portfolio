@@ -1,0 +1,181 @@
+/*--------------------------Secondary Works Card-----------------------------*/
+.secondaryWorks {
+    margin-top: 150px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.secondaryWorks h4 {
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+.gridWorkContainer {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+.gridWorkItem {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    padding: 15px;
+}
+.gridWorkItem:hover {
+    outline: 0.1px solid #ff880033;
+}
+.gridWorkItem h5 {
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+.gridWorkItem p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    color: #ffffffcc;
+}
+.gridWorkItem ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+}
+.gridWorkItem ul li {
+    margin-top: 5px;
+}
+.gridWorkButtons {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.gridWorkButtons img {
+    width: 40px;
+    height: 40px;
+}
+.gridWorkButtons div {
+    display: flex;
+}
+.gridWorkButtons a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 10px;
+}
+.gridWorkButtons svg {
+    width: 100%;
+    color: #ffffff9c;
+}
+.gridWorkButtons svg:hover {
+    color: #ff8800;
+}
+.seeMore {
+    margin-top: 25px;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+    background-color: transparent;
+    color: #ffffffcc;
+    border: 1px solid #ff8800;
+    cursor: pointer;
+}
+.seeMore:hover {
+    background-color: #ff88001a;
+}
+@media (max-width: 1440px) {
+    .secondaryWorks {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .gridWorkContainer {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+    }
+    .gridWorkItem {
+        min-height: 320px;
+    }
+}
+@media (max-width: 1024px) {
+    .secondaryWorks {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .secondaryWorks h4 {
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+    .gridWorkContainer {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+    }
+    .gridWorkItem {
+        min-height: 250px;
+    }
+    .gridWorkItem h5 {
+        font-size: 18px;
+    }
+    .gridWorkItem p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .gridWorkItem ul {
+        font-size: 10px;
+    }
+
+    .gridWorkButtons {
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .gridWorkButtons img {
+        width: 30px;
+        height: 30px;
+    }
+    .gridWorkButtons a {
+        width: 23px;
+        height: 23px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .secondaryWorks {
+        width: 100%;
+    }
+    .gridWorkContainer {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gridWorkItem p {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .gridWorkContainer {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .gridWorkItem {
+        min-height: 150px;
+    }
+    .gridWorkItem p {
+        display: none;
+    }
+    .gridWorkItem ul {
+        font-size: 12px;
+    }
+}

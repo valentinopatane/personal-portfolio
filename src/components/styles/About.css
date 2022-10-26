@@ -1,0 +1,173 @@
+.aboutSection {
+    width: 80%;
+    min-height: max-content;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 50px;
+}
+.subTitle {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    counter-reset: li-counter;
+}
+.subTitle h2::before {
+    counter-increment: li-counter;
+    margin-right: 15px;
+    color: #ff8800;
+    font-size: 17px;
+    text-align: right;
+}
+#aboutTitle::before {
+    content: "01.";
+}
+.line {
+    background-color: #ffffff8c;
+    height: 1px;
+    width: 40%;
+    margin-left: 30px;
+}
+.aboutInfo {
+    margin-top: 50px;
+    width: 60%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutPara {
+    width: 55%;
+}
+.aboutInfo p {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #ffffff9c;
+    line-height: 1.6;
+}
+.skillList {
+    width: 100%;
+    height: max-content;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.skillList li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: max-content;
+    padding: 15px;
+    color: #ffffff9c;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+}
+.skillList li img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.aboutImg {
+    width: 40%;
+    height: 70%;
+    position: relative;
+}
+.aboutImgBorder {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ff8800;
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    z-index: -2;
+    transition: all 0.2s ease-out;
+}
+.aboutImg img {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    filter: grayscale(0.6);
+    transition: all 0.2s ease-out;
+}
+.aboutImg img:hover {
+    filter: grayscale(0);
+    transition: all 0.2s ease-in;
+}
+.aboutImg:hover > .aboutImgBorder {
+    top: 9px;
+    left: 15px;
+    transition: all 0.2s ease-in;
+}
+@media (max-width: 1440px) {
+    .subTitle {
+        font-size: 20px;
+        width: 70%;
+    }
+    .subTitle h2::before {
+        font-size: 15px;
+    }
+    .aboutInfo {
+        width: 70%;
+    }
+}
+@media (max-width: 1024px) {
+    .aboutImg {
+        display: none;
+    }
+    .aboutInfo {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .aboutPara {
+        width: 80%;
+    }
+    .subTitle {
+        font-size: 18px;
+        width: 80%;
+    }
+    .subTitle h2::before {
+        font-size: 14px;
+    }
+    .skillList {
+        margin-top: 20px;
+    }
+    .line {
+        background-color: #ffffff8c;
+        height: 1px;
+        width: 30%;
+    }
+}
+@media (max-width: 768px) {
+    .subTitle {
+        width: 100%;
+        font-size: 18px;
+    }
+    .subTitle h2::before {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .line {
+        margin-left: 15px;
+    }
+    .aboutPara {
+        width: 100%;
+    }
+    .aboutInfo p {
+        font-size: 15px;
+    }
+    .skillList li {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,250 @@
+.workSection {
+    width: 80%;
+    min-height: 50vh;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 200px;
+}
+.mainWorks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#worksTitle::before {
+    content: "03.";
+}
+
+/*---------------------------------------------------------------------------*/
+/*----------------------------Main Works Card-------------------------------*/
+.workCards {
+    margin-top: 120px;
+    min-width: 60%;
+    height: 100%;
+}
+.workCards:nth-child(1) {
+    transition-delay: 200ms;
+}
+.workCards:nth-child(2) {
+    transition-delay: 400ms;
+}
+.workCards:nth-child(3) {
+    transition-delay: 600ms;
+}
+.workCardContainer {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.workCardImgContainer {
+    width: 65%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background-color: #1f1f1f00;
+}
+#workCardImgContainerReverse {
+    right: 0;
+}
+.workCardImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.4s ease-out;
+    filter: opacity(0.4);
+    cursor: pointer;
+}
+.workCardImgContainer img:hover {
+    transition: all 0.4s ease-in;
+    filter: opacity(1);
+}
+.workCardInfoContainer {
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    right: 0;
+}
+#workCardInfoContainerReverse {
+    left: 0;
+}
+.workCardButtons {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 13px;
+}
+#workCardButtonsReverse {
+    justify-content: left;
+}
+.workCardButtons a {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.workCardButtons svg {
+    width: 25px;
+    height: 25px;
+    color: #ffffff9c;
+    cursor: pointer;
+}
+.workCardButtons svg:hover {
+    color: #ff8800;
+}
+.workCardInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: relative;
+}
+#workCardInfoReverse {
+    align-items: flex-start;
+}
+.workCardInfo h6 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    color: #ff8800;
+}
+.workCardInfo h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    margin: 10px 0 20px 0;
+}
+.workCardInfo p {
+    width: 140%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding: 20px 15px 20px 25px;
+    background-color: #111111;
+    color: #ffffffcc;
+    top: 45%;
+    margin-bottom: 15px;
+}
+.workCardInfo ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff9c;
+    font-size: 13px;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.workCardInfo ul li::before {
+    content: "\2022";
+    color: #ff8800;
+    width: 2em;
+    margin-right: 5px;
+}
+/*---------------------------------------------------------------------------*/
+@media (max-width: 1440px) {
+    .workCards {
+        margin-top: 50px;
+        min-width: 70%;
+    }
+
+    .workCardInfo h4 {
+        font-size: 26px;
+    }
+    .workCardInfo p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .workCardInfo ul {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .workCards {
+        min-width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .workSection {
+        width: 100%;
+    }
+    .mainWorks {
+        width: 80%;
+    }
+    .workCards {
+        margin-top: 40px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .workCardContainer {
+        height: max-content;
+        flex-direction: column-reverse;
+        position: inherit;
+    }
+    .workCardImgContainer {
+        display: none;
+    }
+    .workCardInfoContainer {
+        position: inherit;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .workCardButtons {
+        width: 70%;
+        justify-content: left;
+    }
+    .workCardInfo {
+        align-items: center;
+        justify-content: space-around;
+        position: inherit;
+    }
+    #workCardInfoReverse {
+        align-items: center;
+    }
+    .workCardInfo p {
+        width: 70%;
+        font-size: 14px;
+        padding: 20px 15px;
+    }
+    .workCardInfo ul {
+        width: 70%;
+        font-size: 12px;
+    }
+    .workCardInfo ul li {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .workSection {
+        margin-top: 70px;
+    }
+    .workCardInfo p {
+        width: 100%;
+    }
+    .workCardInfo ul {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .workCardButtons {
+        width: 100%;
+    }
+}

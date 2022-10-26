@@ -1,0 +1,132 @@
+.navOff {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 0px 0px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.navContainer {
+    display: flex;
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 11;
+    padding: 0px 70px;
+    border-bottom: 1px solid #ffffff0c;
+    transition-timing-function: ease-in;
+    transition: all 0.5s ease-out;
+}
+.navBar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+}
+.logoContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logoContainer a {
+    width: 50px;
+}
+.logoContainer a img {
+    width: 100%;
+}
+.navList {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    counter-reset: li-counter;
+}
+.navListItem a {
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    width: max-content;
+}
+.navList li::before {
+    counter-increment: li-counter;
+    content: "0" counter(li-counter) ".";
+    margin-right: 5px;
+    color: #ff8800;
+    font-size: 11px;
+    text-align: right;
+}
+.navListItem:hover {
+    color: #ff8800;
+}
+@media (max-width: 1440px) {
+    .logoContainer {
+        width: 50%;
+    }
+    .navBar {
+        justify-content: space-between;
+    }
+    .navList {
+        width: 50%;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 1024px) {
+    .logoContainer {
+        width: 30%;
+    }
+    .navList {
+        width: 70%;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 768px) {
+    .navContainer {
+        padding: 0 40px;
+    }
+    .navBar {
+        width: 100%;
+    }
+    .logoContainer a {
+        width: 45px;
+    }
+    .navBurgerMenu {
+        width: 35px;
+        cursor: pointer;
+    }
+    .navBurgerMenu img {
+        color: #ff8800;
+    }
+    .navList {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: max-content;
+        background-color: #070707;
+        border-bottom: 1px solid #ffffff0c;
+        transform: translateX(100%);
+        transition: all 0.3s ease-out;
+    }
+    .showNav {
+        transform: translateX(0%);
+        transition: all 0.3s ease-in;
+    }
+    .navListItem {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+}

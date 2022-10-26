@@ -1,0 +1,134 @@
+.firstSection {
+    margin-top: 100px;
+    width: 80%;
+    min-height: 95vh;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.firstInfo {
+    width: 65%;
+}
+.firstInfo h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    color: #ff8800;
+}
+.firstInfo h1 {
+    font-size: 70px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.firstInfo h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #ffffff9c;
+}
+.firstInfo p {
+    margin-top: 20px;
+    width: 60%;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #ffffff9c;
+    font-family: "Inter", sans-serif;
+}
+.firstButtons {
+    margin-top: 50px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.firstButtons a {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: 1px solid #ff8800;
+    color: #ff8800;
+}
+.firstButtons a:hover {
+    background-color: #ff88001a;
+}
+@media (max-width: 1440px) {
+    .firstInfo h2 {
+        font-size: 15px;
+    }
+    .firstInfo h1 {
+        font-size: 55px;
+    }
+    .firstInfo h3 {
+        font-size: 35px;
+    }
+    .firstInfo p {
+        font-size: 17px;
+        width: 100%;
+    }
+    .firstButtons a {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    .firstSection {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .firstSection {
+        min-height: 80vh;
+        padding-bottom: 0px;
+    }
+    .firstInfo {
+        width: 80%;
+    }
+    .firstInfo h2 {
+        font-size: 14px;
+    }
+    .firstInfo h1 {
+        font-size: 38px;
+    }
+    .firstInfo h3 {
+        font-size: 22px;
+    }
+    .firstInfo p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .firstButtons a {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 425px) {
+    .firstSection {
+        margin-bottom: 20px;
+    }
+    .firstInfo h2 {
+        font-size: 13px;
+    }
+    .firstInfo h1 {
+        font-size: 32px;
+    }
+    .firstInfo h3 {
+        font-size: 20px;
+    }
+    .firstInfo p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .firstInfo h1 {
+        font-size: 35px;
+    }
+}
