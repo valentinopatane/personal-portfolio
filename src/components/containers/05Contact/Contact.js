@@ -56,7 +56,7 @@ const Contact = () => {
 
                     <a
                         className="cv"
-                        href="cv.pdf"
+                        href="CV - Valentino Patané.pdf"
                         download="CV - Valentino Patané"
                     >
                         Descargar CV

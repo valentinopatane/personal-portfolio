@@ -15,7 +15,10 @@ const FirstScreen = () => {
                 </p>
                 <div className="firstButtons">
                     <a href="mailto:valentinopatane98@gmail.com">Contacto</a>
-                    <a href="cv.pdf" download="CV - Valentino Patané">
+                    <a
+                        href="CV - Valentino Patané.pdf"
+                        download="CV - Valentino Patané"
+                    >
                         Descargar CV
                     </a>
                 </div>
