@@ -3,7 +3,6 @@ import "../../styles/Contact.css";
 import githubLogo from "../../img/github";
 import instagramLogo from "../../img/ig";
 import linkedinLogo from "../../img/linkd";
-import cv from "../../data/cv.pdf";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
     const [messageSent, setMessageSent] = useState(false);
@@ -57,7 +56,7 @@ const Contact = () => {
 
                     <a
                         className="cv"
-                        href={cv}
+                        href="cv.pdf"
                         download="CV - Valentino Patané"
                     >
                         Descargar CV

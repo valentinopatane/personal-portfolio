@@ -1,6 +1,5 @@
 import React from "react";
 import "../../styles/FirstScreen.css";
-import cv from "../../data/cv.pdf";
 const FirstScreen = () => {
     return (
         <section className="firstSection bigContainer" id="home">
@@ -16,7 +15,7 @@ const FirstScreen = () => {
                 </p>
                 <div className="firstButtons">
                     <a href="mailto:valentinopatane98@gmail.com">Contacto</a>
-                    <a href={cv} download="CV - Valentino Patané">
+                    <a href="cv.pdf" download="CV - Valentino Patané">
                         Descargar CV
                     </a>
                 </div>
