@@ -40,9 +40,9 @@ const WorkSecondary = ({ data }) => {
                     </div>
                 ))}
             </div>
-            {/* <button className="seeMore" onClick={() => showMore()}>
+            <button className="seeMore" onClick={() => showMore()}>
                 Ver más
-            </button> */}
+            </button>
         </div>
     );
 };

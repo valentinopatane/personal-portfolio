@@ -1,5 +1,23 @@
 export const secondaryData = [
     {
+        title: "Solar Maiten",
+        paragraph:
+            "Sitio web en formato SPA en el que se puede conocer información relevante de complejo turístico en la localidad de San Rafael, Mendoza.",
+        list: [
+            {
+                bullet: "React JS",
+            },
+            {
+                bullet: "SCSS",
+            },
+            {
+                bullet: "Responsive Design",
+            },
+        ],
+        githubLink: "https://github.com/valentinopatane/solar-maiten",
+        previewLink: "https://solar-maiten.vercel.app/",
+    },
+    {
         title: "The Dojo",
         paragraph:
             "Sitio web enfocado en el desarrollo personal. Brinda herramientas para el uso cotidiano referidas al fitness, finanzas personales, sistemas de estudio y demás.",
