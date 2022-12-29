@@ -5,7 +5,19 @@ export const data = [
             date: "Fecha: 2022 - 2023 (En curso)",
             list: [
                 {
-                    bullet: "La Tecnicatura Universitaria en Programación está estructurada para ser desarrollada en dos años (cna uatro semestres) y tiene ucarga horaria total de MIL NOVECIENTAS OCHENTA (1980) horas reloj.",
+                    bullet: "Carga horaria de 1980hs",
+                },
+                {
+                    bullet: "Fundamentos de programación",
+                },
+                {
+                    bullet: "Arquitectura y sistemas operativos",
+                },
+                {
+                    bullet: "Métodos de investigación",
+                },
+                {
+                    bullet: "Control de versiones",
                 },
             ],
         },
